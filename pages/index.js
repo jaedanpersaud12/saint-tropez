@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Image from "next/image"
 import Details from "../components/Details/Details"
+import Footer from "../components/Footer/Footer"
 import Hero from "../components/Hero/Hero"
 import Navbar from "../components/Navbar/Navbar"
 import Spotify from "../components/Spotify"
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Details />
         <Spotify />
+        <Footer />
       </main>
     </div>
   )

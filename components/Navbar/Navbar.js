@@ -6,7 +6,7 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false)
 
   return (
-    <nav className="w-full bg-black shadow">
+    <nav className="sticky top-0 z-20 w-full bg-black shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -64,10 +64,9 @@ export default function NavBar() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <NavLink title={"Home"} href={""} />
-              <NavLink title={"Hosts"} href={""} />
-              <NavLink title={"Menu"} href={""} />
-              <NavLink title={"Gallery"} href={""} />
+              <NavLink title={"Hosts"} href={"/"} color={"text-gray-100"} />
+              <NavLink title={"Menu"} href={"/"} color={"text-gray-100"} />
+              <NavLink title={"Gallery"} href={"/"} color={"text-gray-100"} />
               <div className={`${navbar ? "hidden" : "block"} pl-4`}>
                 <Button />
               </div>
