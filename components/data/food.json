@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Something",
+    "price": "$35",
+    "src": "/tapas1.jpg"
+  },
+  {
+    "title": "Something",
+    "price": "$35",
+    "src": "/tapas2.jpg"
+  },
+  {
+    "title": "Something",
+    "price": "$35",
+    "src": "/tapas3.jpg"
+  },
+  {
+    "title": "Something",
+    "price": "$35",
+    "src": "/tapas5.jpg"
+  }
+]

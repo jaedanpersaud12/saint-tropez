@@ -9,11 +9,13 @@ function MenuSection() {
   })
   return (
     <div className="bg-plant ">
-      <h1 className="text-center  pt-20 serif text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-dark-gold to-light-gold uppercase">
-        Dinner Menu
-      </h1>
-      <div className="max-w-7xl px-10 mx-auto py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-20">
-        {DisplayData}
+      <div className="py-10 lg:py-20 max-w-7xl px-10 mx-auto">
+        <h1 className="pb-10 lg:pb-20 serif text-3xl lg:text-4xl font-bold text-white uppercase">
+          Dinner Menu
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+          {DisplayData}
+        </div>
       </div>
     </div>
   )

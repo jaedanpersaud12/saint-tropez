@@ -2,7 +2,7 @@ import Head from "next/head"
 import Footer from "../components/Footer/Footer"
 import Navbar from "../components/Navbar/Navbar"
 import CTASection from "../components/CTASection"
-import FoodSection from "../components/Menu/FoodSection"
+import TapasSection from "../components/Menu/TapasSection"
 
 export default function Menu() {
   return (
@@ -14,7 +14,7 @@ export default function Menu() {
       </Head>
       <main className="sans-serif">
         <Navbar active={true} />
-        <FoodSection />
+        <TapasSection />
         <CTASection />
         <Footer />
       </main>

@@ -7,11 +7,11 @@
   {
     "title": "Food",
     "src": "/fd1.jpg",
-    "link": "/tapas"
+    "link": "/food"
   },
   {
     "title": "Drinks",
     "src": "/fd5.jpg",
-    "link": "/tapas"
+    "link": "/drinks"
   }
 ]
