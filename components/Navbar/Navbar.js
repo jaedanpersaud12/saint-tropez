@@ -1,8 +1,9 @@
 import { useState } from "react"
 import Button from "../Button"
 import NavLink from "./NavLink"
+import Link from "next/link"
 
-export default function NavBar() {
+export default function NavBar(active) {
   const [navbar, setNavbar] = useState(false)
 
   return (
@@ -10,11 +11,16 @@ export default function NavBar() {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="javascript:void(0)">
-              <h1 class="serif text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-dark-gold to-light-gold uppercase">
-                <a href="#"> Saint Tropez </a>
-              </h1>
-            </a>
+            <h1
+              className={`${
+                active ? "" : ""
+              }serif text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-dark-gold to-light-gold hover:from-light-gold hover:to-dark-gold transition duration-300 uppercase`}
+            >
+              <Link href="/">
+                <a>Saint Tropez</a>
+              </Link>
+            </h1>
+
             <div className="md:hidden flex align-center">
               <div className="mr-4">
                 <Button />
@@ -64,9 +70,17 @@ export default function NavBar() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <NavLink title={"Hosts"} href={"/"} color={"text-gray-100"} />
-              <NavLink title={"Menu"} href={"/"} color={"text-gray-100"} />
-              <NavLink title={"Gallery"} href={"/"} color={"text-gray-100"} />
+              <NavLink
+                title={"Hosts"}
+                href={"/hosts"}
+                color={"text-gray-100"}
+              />
+              <NavLink title={"Menu"} href={"/menu"} color={"text-gray-100"} />
+              <NavLink
+                title={"Gallery"}
+                href={"/gallery"}
+                color={"text-gray-100"}
+              />
               <div className={`${navbar ? "hidden" : "block"} pl-4`}>
                 <Button />
               </div>

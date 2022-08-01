@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Image from "next/image"
+import CTASection from "../components/CTASection"
 import Details from "../components/Details/Details"
 import Footer from "../components/Footer/Footer"
 import Hero from "../components/Hero/Hero"
@@ -15,11 +15,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="sans-serif">
-        <Navbar />
+        <Navbar active={true} />
+        {/* Navbar is fine */}
         <Hero />
+        {/* Hero is fine */}
         <Details />
+        {/* This is good. Map is a bit ugly but I think we can fix that. */}
         <Spotify />
+        {/* Playlist not loading ?  */}
+        <CTASection />
         <Footer />
+        {/* Need to fill ig link also make target="_blank" */}
       </main>
     </div>
   )
