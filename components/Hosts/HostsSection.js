@@ -9,7 +9,7 @@ function HostsSection() {
   })
   return (
     <div className="bg-plant">
-      <div className="grid grid-cols-1 sm:grid-cols-2 mx-auto max-w-6xl gap-x-12 pb-12 px-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 mx-auto max-w-7xl gap-x-12 gap-y-12 px-10 py-20">
         {DisplayData}
       </div>
     </div>

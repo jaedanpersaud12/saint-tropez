@@ -4,7 +4,7 @@ import React from "react"
 function HostCard({ src, hostName, bio }) {
   return (
     <div>
-      <div className="max-w-[400px] mx-auto p-10 bg-opacity-69">
+      <div className="max-w-[400px] mx-auto ">
         <div className="w-52 h-52 relative mx-auto">
           <Image src={src} layout={"fill"} />
         </div>
