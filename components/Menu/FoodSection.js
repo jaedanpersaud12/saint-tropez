@@ -4,11 +4,13 @@ import FoodData from "../data/food.json"
 import BackLink from "./BackLink"
 import FoodCard from "./FoodCard"
 
-function TapasSection({}) {
-  const DisplayData = FoodData.map(({ title, src, price }) => {
+function FoodSection({}) {
+  const DisplayData = FoodData.map(({ title, src, price, key }) => {
     //Destructure the objects returned from the json and get the employee information.
-    return <FoodCard key={title} title={title} price={price} src={src} />
+
+    return <FoodCard key={key} title={title} price={price} src={src} />
   })
+  console.table(FoodData)
   return (
     <div className="bg-plant ">
       <div className="max-w-7xl px-10 py-10 lg:py-20   mx-auto">
@@ -29,4 +31,4 @@ function TapasSection({}) {
   )
 }
 
-export default TapasSection
+export default FoodSection

@@ -15,7 +15,7 @@ function Hero() {
           <h1 className="serif text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-dark-gold to-light-gold uppercase">
             Saint Tropez
           </h1>
-          <h1 className="sans-serif text-xl font-bold text-white uppercase">
+          <h1 className="sans-serif tracking-widest text-xl font-bold text-white uppercase">
             The Ultimate Dinner Party
           </h1>
           <p className="sans-serif text-white text-center text-base pt-5">

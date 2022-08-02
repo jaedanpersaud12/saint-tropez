@@ -5,9 +5,9 @@ import BackLink from "./BackLink"
 import FoodCard from "./FoodCard"
 
 function DrinksSection({}) {
-  const DisplayData = DrinksData.map(({ title, src, price }) => {
+  const DisplayData = DrinksData.map(({ title, src, price, key }) => {
     //Destructure the objects returned from the json and get the employee information.
-    return <FoodCard key={title} title={title} price={price} src={src} />
+    return <FoodCard key={key} title={title} price={price} src={src} />
   })
   return (
     <div className="bg-plant ">

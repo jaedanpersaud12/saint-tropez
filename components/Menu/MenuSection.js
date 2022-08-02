@@ -3,9 +3,9 @@ import MenuData from "../data/menu.json"
 import MenuCard from "./MenuCard"
 
 function MenuSection() {
-  const DisplayData = MenuData.map(({ src, title, link }) => {
+  const DisplayData = MenuData.map(({ src, title, link, key }) => {
     //Destructure the objects returned from the json and get the employee information.
-    return <MenuCard key={title} title={title} src={src} link={link} />
+    return <MenuCard key={key} title={title} src={src} link={link} />
   })
   return (
     <div className="bg-plant ">

@@ -2,21 +2,25 @@
   {
     "title": "Something",
     "price": "$35",
-    "src": "/tapas1.jpg"
+    "src": "/tapas1.jpg",
+    "key": "ib8RtYtsAi"
   },
   {
     "title": "Something",
     "price": "$35",
-    "src": "/tapas2.jpg"
+    "src": "/tapas2.jpg",
+    "key": "M70z6LXiiS"
   },
   {
     "title": "Something",
     "price": "$35",
-    "src": "/tapas3.jpg"
+    "src": "/tapas3.jpg",
+    "key": "fUpDLIaYHC"
   },
   {
     "title": "Something",
     "price": "$35",
-    "src": "/tapas5.jpg"
+    "src": "/tapas5.jpg",
+    "key": "LT4d5KH4pR"
   }
 ]
