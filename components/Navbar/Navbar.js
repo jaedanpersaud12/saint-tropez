@@ -22,7 +22,7 @@ export default function NavBar(active) {
             </h1>
 
             <div className="md:hidden flex align-center">
-              <div className="mr-4">
+              <div className="mx-2">
                 <Button />
               </div>
               <button
@@ -69,7 +69,7 @@ export default function NavBar(active) {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <ul className="items-center pb-10 md:pb-0 justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <NavLink
                 title={"Hosts"}
                 href={"/hosts"}

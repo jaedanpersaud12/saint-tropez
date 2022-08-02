@@ -4,7 +4,7 @@ import Button from "../Button"
 function Hero() {
   return (
     <div className="bg-plant bg-cover ">
-      <div className="px-4 mx-auto py-20 max-w-7xl sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <div className="px-4 mx-auto py-10 lg:py-20 max-w-7xl sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-5">
         <div>
           <img className="px-16 " src="./hero.JPG" alt="img1" />
         </div>
