@@ -1,6 +1,27 @@
 import React from "react"
+import DetailsData from "../data/details.json"
 
 function Details() {
+  const DisplayData = DetailsData.map(({ date, dinner, party }) => {
+    //Destructure the objects returned from the json and get the employee information.
+
+    return (
+      <div>
+        <p className="text-white pt-6 text-xl">
+          <span className="font-bold">Date</span> - {date}
+        </p>
+        <p className="text-white pt-6 text-xl">
+          <span className="font-bold">Dinner</span> - {dinner}
+        </p>
+        <p className="text-white pt-6 text-xl">
+          <span className="font-bold">Party</span> - {party}
+        </p>
+        <p className="text-white pt-6 text-xl">
+          <span className="font-bold">Venue</span> - Anchorage on the Water
+        </p>
+      </div>
+    )
+  })
   return (
     <div>
       <div className="bg-black">
@@ -17,18 +38,7 @@ function Details() {
             <h1 className="serif text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-dark-gold to-light-gold uppercase">
               Details
             </h1>
-            <p className="text-white pt-6 text-xl">
-              <span className="font-bold">Date</span> - August 20th 2022
-            </p>
-            <p className="text-white pt-6 text-xl">
-              <span className="font-bold">Dinner</span> - 6pm-10pm
-            </p>
-            <p className="text-white pt-6 text-xl">
-              <span className="font-bold">Party</span> - 10pm-2am
-            </p>
-            <p className="text-white pt-6 text-xl">
-              <span className="font-bold">Venue</span> - Anchorage on the Water
-            </p>
+            {DisplayData}
           </div>
         </div>
       </div>
