@@ -1,5 +1,10 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/menu": "pages/menu.js",
+  "/food": "pages/food.js",
+  "/gallery": "pages/gallery.js",
+  "/tapas": "pages/tapas.js",
+  "/drinks": "pages/drinks.js"
 }
