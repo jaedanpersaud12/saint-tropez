@@ -7,11 +7,11 @@ function MenuCard({ src, title, link }) {
       <div className="group relative">
         <Link href={link}>
           <a>
-            <div className="relative w-full h-80 bg-white transition duration-200 cursor-pointer rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+            <div className="relative w-full h-80 bg-white transition duration-200 cursor-pointer rounded-lg overflow-hidden sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
               <img
                 src={src}
                 alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
-                className="w-full h-full object-center object-cover"
+                className="w-full h-full object-center object-cover transition-all duration-[250] hover:blur-md"
               />
             </div>
 
