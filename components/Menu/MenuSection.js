@@ -1,5 +1,5 @@
 import React from "react"
-import MenuData from "../data/menu.json"
+import MenuData from "../data/menu.js"
 import MenuCard from "./MenuCard"
 
 function MenuSection() {
@@ -14,7 +14,8 @@ function MenuSection() {
           Dinner Menu
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
-          {DisplayData}
+          <h1>Coming Soon</h1>
+          {/* {DisplayData} */}
         </div>
       </div>
     </div>
